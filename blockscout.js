@@ -8,15 +8,11 @@ const { merge } = require("sol-merger");
 const { plugins } = require("sol-merger/dist/lib/plugins");
 
 const API_URLS = {
-  1: "https://blockscout.com/eth/mainnet/api",
-  77: "https://blockscout.com/poa/sokol/api",
-  100: "https://blockscout.com/poa/xdai/api",
+  4432: "https://testnet.zcore.cash/api",
 };
 
 const EXPLORER_URLS = {
-  1: "https://blockscout.com/poa/sokol/address",
-  77: "https://blockscout.com/poa/sokol/address",
-  100: "https://blockscout.com/poa/xdai/address",
+  4432: "https://testnet.zcore.cash/address",
 };
 
 const VerificationStatus = {
