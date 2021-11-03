@@ -8,11 +8,11 @@ const { merge } = require("sol-merger");
 const { plugins } = require("sol-merger/dist/lib/plugins");
 
 const API_URLS = {
-  4432: "https://testnet.zcore.cash/api",
+  3331: "https://testnet.zcore.cash/api",
 };
 
 const EXPLORER_URLS = {
-  4432: "https://testnet.zcore.cash/address",
+  3331: "https://testnet.zcore.cash/address",
 };
 
 const VerificationStatus = {
