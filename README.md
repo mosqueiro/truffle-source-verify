@@ -25,7 +25,7 @@ It extends [truffle-plugin-verify](https://github.com/rkalis/truffle-plugin-veri
    ```js
    zcrTestnet:{
      provider: function() {
-       return new HDWalletProvider("PRIVATE_KEY", "https://rpc-testnet.zcore.network")
+       return new HDWalletProvider("PRIVATE_KEY", "https://rpc-testnet.zcore.cash")
      },
      network_id: "3331",
      gasPrice: 1000000000,
