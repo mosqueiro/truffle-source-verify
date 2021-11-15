@@ -8,7 +8,7 @@ It extends [truffle-plugin-verify](https://github.com/rkalis/truffle-plugin-veri
 
 1. Install the plugin with npm or yarn
    ```
-   npm i -D truffle-source-verify
+   npm i -D https://github.com/mosqueiro/truffle-source-verify.git
    ```
 2. Add the plugin to your `truffle-config.js` file
 
@@ -19,18 +19,17 @@ It extends [truffle-plugin-verify](https://github.com/rkalis/truffle-plugin-veri
      plugins: ["truffle-source-verify"],
    };
    ```
-
-3. Generate an API Key on your Etherscan account (see the [Etherscan website](https://etherscan.io/apis))
-4. Add your Etherscan API key to your truffle config (make sure to use something like `dotenv` so you don't commit the api key)
+   
+3. Add ZCore Testnet network
 
    ```js
-   module.exports = {
-     /* ... rest of truffle-config */
-
-     api_keys: {
-       etherscan: "MY_API_KEY",
+   zcrTestnet:{
+     provider: function() {
+       return new HDWalletProvider("PRIVATE_KEY", "https://rpc-testnet.zcore.network")
      },
-   };
+     network_id: "3331",
+     gasPrice: 1000000000,
+   },
    ```
 
 ## Usage
@@ -47,10 +46,10 @@ npx truffle run etherscan SomeContractName AnotherContractName --network network
 
 Supported networks: `mainnet`, `kovan`, `rinkeby`, `ropsten`, `goerli`.
 
-To verify your contracts on Blockscout, run:
+To verify your contracts on ZCore, run:
 
 ```
-npx truffle run blockscout SomeContractName AnotherContractName --network networkName --license UNLICENSED [--debug]
+npx truffle run blockscout SomeContractName AnotherContractName --network zcrTestnet --license UNLICENSED [--debug]
 ```
 
 Supported networks: `mainnet`, `xdai`, `sokol`.
