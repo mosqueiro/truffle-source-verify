@@ -38,21 +38,12 @@ It extends [truffle-plugin-verify](https://github.com/rkalis/truffle-plugin-veri
 
 Before running verification, make sure that you have actually deployed your contracts to a public network with Truffle.
 
-To verify your contracts on Etherscan, run:
-
-```
-npx truffle run etherscan SomeContractName AnotherContractName --network networkName [--debug]
-```
-
-Supported networks: `mainnet`, `kovan`, `rinkeby`, `ropsten`, `goerli`.
-
 To verify your contracts on ZCore, run:
 
 ```
 npx truffle run blockscout SomeContractName AnotherContractName --network zcrTestnet --license UNLICENSED [--debug]
 ```
 
-Supported networks: `mainnet`, `xdai`, `sokol`.
 
 See [truffle-plugin-verify](https://github.com/rkalis/truffle-plugin-verify) for more information.
 
