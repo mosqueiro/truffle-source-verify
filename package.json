@@ -1,5 +1,5 @@
 {
-  "name": "truffle-source-verify",
+  "name": "@zcorefinance/truffle-source-verify",
   "version": "0.0.8",
   "description": "Verify your deployed smart contracts on Etherscan/Blockscout from the Truffle CLI",
   "repository": "https://github.com/olivdb/truffle-source-verify",
