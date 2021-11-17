@@ -8,7 +8,11 @@ It extends [truffle-plugin-verify](https://github.com/rkalis/truffle-plugin-veri
 
 1. Install the plugin with npm or yarn
    ```
-   npm i -D https://github.com/mosqueiro/truffle-source-verify.git
+   yarn add @zcorefinance/truffle-source-verify
+   ```
+   or
+   ```
+   npm i -D @zcorefinance/truffle-source-verify
    ```
 2. Add the plugin to your `truffle-config.js` file
 
